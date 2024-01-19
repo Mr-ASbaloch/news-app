@@ -5,8 +5,8 @@ import search from "../assets/search.png";
 import menu from "../assets/menu.png";
 const Header: React.FC = () => {
   return (
-    <div className="main-div px-3 md:px-4 lg:px-[2%] ">
-      <div className="flex justify-between  md:justify-evenly items-center mt-3">
+    <div className="main-div px-3 md:px-[5%]  ">
+      <div className="flex justify-between   items-center mt-3">
         <div>
           <img src={logo} alt="logo" />
         </div>

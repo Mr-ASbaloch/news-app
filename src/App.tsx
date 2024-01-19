@@ -1,5 +1,6 @@
-import Header from "./components/Header"
-import HomePage from "./components/HomePage"
+
+import HomePage from "./pages/HomePage"
+
 
 function App() {
  
@@ -7,8 +8,8 @@ function App() {
   return (
     <div>
 
-      <Header/>
-      <HomePage/>
+      
+  <HomePage/>
     </div>
   )
 }
