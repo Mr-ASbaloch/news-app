@@ -7,6 +7,7 @@ import love from "../assets/love.png";
 import share from "../assets/share.png";
 import save from "../assets/save.png";
 import card from "../assets/card.png";
+import ViewMore from "../components/ViewMore";
 
 const NewsPage: React.FC = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,10 @@ const NewsPage: React.FC = () => {
   }, [dispatch]);
 
   if (news.status === "loading") {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center align-middle ">
+    <div className="mx-auto text-3xl font-bold text-green-900 animate-bounce">loading ....</div>
+
+    </div>;
   }
 
   if (news.status === "failed") {
@@ -28,12 +32,7 @@ const NewsPage: React.FC = () => {
     <div>
       <div className="w-full mt-5 md:flex md:flex-wrap  px-3 md:px-[5%]  ">
         {news.articles.map((article) => (
-          // <div
-          //   key={article.id}
-          //   className="mt-5 shadow-lg md:w-1/3  md:px-5 pb-5 "
-          // >
-          //   <h1 className="text-3xl">{article.abstract}</h1>
-          // </div>
+        
           <div
             key={article.id}
             className="mt-5 shadow-lg md:w-1/3 md:px-5 pb-4 "
@@ -76,6 +75,7 @@ const NewsPage: React.FC = () => {
             </div>
           </div>
         ))}
+     
       </div>
     </div>
   );
