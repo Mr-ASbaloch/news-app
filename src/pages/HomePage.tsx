@@ -55,8 +55,6 @@ const HomePage: React.FC = () => {
 
       <BreakingNews />
 
-      
-
       {/* category section  */}
 
       <Category />
