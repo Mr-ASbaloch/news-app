@@ -22,7 +22,7 @@ const NewsPage: React.FC = () => {
     return (
       <div className="flex justify-center align-middle ">
         <div className="mx-auto text-3xl font-bold text-green-900 animate-bounce">
-          loading ....
+        Fetching  Updated News ....
         </div>
       </div>
     );
