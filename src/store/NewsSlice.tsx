@@ -34,10 +34,7 @@ const newsSlice = createSlice({
         state.status = "succeeded";
         state.articles = action.payload;
       })
-    // .addCase(fetchNews.rejected, (state, action: PayloadAction<string>) => {
-    //   state.status = 'failed';
-    //   state.error = action.payload;
-    // });
+    
   },
 });
 
