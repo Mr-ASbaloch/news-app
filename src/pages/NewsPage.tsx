@@ -7,14 +7,14 @@ import love from "../assets/love.png";
 import share from "../assets/share.png";
 import save from "../assets/save.png";
 import card from "../assets/card.png";
-import ViewMore from "../components/ViewMore";
+
 
 const NewsPage: React.FC = () => {
   const dispatch = useDispatch();
   const news = useSelector((state: RootState) => state.news);
 
   useEffect(() => {
-    dispatch(fetchNews());
+    dispatch(fetchNews() );
   }, [dispatch]);
 
   if (news.status === "loading") {

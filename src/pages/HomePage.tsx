@@ -5,7 +5,7 @@ import share from "../assets/share.png";
 import save from "../assets/save.png";
 import Header from "../components/Header";
 import Category from "../components/Category";
-import Card from "../components/Card";
+
 import ViewMore from "../components/ViewMore";
 import Footer from "../components/Footer";
 import BreakingNews from "../components/BreakingNews";

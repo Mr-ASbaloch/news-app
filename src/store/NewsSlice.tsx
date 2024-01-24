@@ -1,9 +1,9 @@
-// newsSlice.ts
+
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
 
 interface NewsState {
-  articles: any[]; // Update this type according to your API response structure
+  articles: any[]; 
   status: "idle" | "loading" | "succeeded" | "failed";
   error: string | null;
 }
@@ -33,7 +33,7 @@ const newsSlice = createSlice({
       .addCase(fetchNews.fulfilled, (state, action: PayloadAction<any[]>) => {
         state.status = "succeeded";
         state.articles = action.payload;
-      });
+      })
     // .addCase(fetchNews.rejected, (state, action: PayloadAction<string>) => {
     //   state.status = 'failed';
     //   state.error = action.payload;
