@@ -9,6 +9,7 @@ import Card from "../components/Card";
 import ViewMore from "../components/ViewMore";
 import Footer from "../components/Footer";
 import BreakingNews from "../components/BreakingNews";
+import NewsPage from "./NewsPage";
 
 const HomePage: React.FC = () => {
   return (
@@ -52,23 +53,24 @@ const HomePage: React.FC = () => {
 
       {/* breaking news section  */}
 
-     <BreakingNews/>
+      <BreakingNews />
 
+      
 
       {/* category section  */}
 
-      <Category/>
+      <Category />
 
       {/* Data Display  */}
 
-      <Card/>
+      <NewsPage />
 
       {/* View More  */}
-      <ViewMore/>
+      <ViewMore />
 
       {/* footer  */}
 
-<Footer/>
+      <Footer />
     </div>
   );
 };

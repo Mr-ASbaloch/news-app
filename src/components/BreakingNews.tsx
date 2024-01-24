@@ -1,5 +1,4 @@
 import React from "react";
-
 const BreakingNews: React.FC = () => {
   return (
     <div className="px-3 mt-4 md:px-[5%]">

@@ -1,5 +1,6 @@
 
 import HomePage from "./pages/HomePage"
+// import NewsPage from "./pages/NewsPage"
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
 
-      
+     {/* <NewsPage/>  */}
   <HomePage/>
     </div>
   )
